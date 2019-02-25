@@ -1,0 +1,9 @@
+02-06-19: NOS
+02-07-19: precedence; parse tree; case; methods; scope; 
+02-08-19: hwmk subissions; git; array; hash;
+02-14-19: enumerable;
+02-19-19: git; gem; exceptions; pair programming
+02-20-19: minitest; TDD; git cont;
+02-21-19: vs debugger; keyword args & defualt params; More Conditionals;
+02-22-19: .gitignore; git menu keys; 
+02-25-19: intro to OOP; classes;

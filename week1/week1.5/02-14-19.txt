@@ -1,0 +1,11 @@
+What is Enumerable?
+Enumerable is a module that is mixed in to both Array and Hash types in Ruby.
+
+Enumeration: things that can be counted.
+all things you can do .each 
+
+MAP
+-> array of elems, want new array different modified
+-> .map makes a new array... it DOES NOT GET STORED ANYWHERE unless I assign it. 
+
+

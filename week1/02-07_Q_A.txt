@@ -1,0 +1,57 @@
+Intro to Data Structures: Arrays and Hashes
+
+
+Question: Why do we interpolate when printing the whole array? 
+What is the difference between puts students and puts "#{students}"?
+
+2.5.1 :009 > puts ["one", "two"]
+one
+two
+ => nil
+2.5.1 :010 > puts "#{["one", "two"]}"
+["one", "two"]
+ => nil  
+
+What different ways are there to access the last element in an array?
+array[-1]
+array[(array.length - 1)]
+
+Given an array with the age of each person in the class,
+How would you find the average age?
+How would you find the biggest or smallest age?
+see 02-07_test.rb LINES 44-68
+
+Questions
+Does it make sense to access the "last" key/value pair in a hash?
+NO ->  the order is not guaranteed
+
+What data type do you get back from my_hash.keys?
+an array of all the keys in the hash
+
+How would you get a list of fruits costing less than $3.00?
+LINES 68-82
+
+Exercise: Hash or Array?
+Determine whether you would use an array or a hash to store each of these collections and why.
+
+The types of tea you have in your cupboard
+array -> list of items
+hash -> if wanting to count the number of tea bags of that type
+
+Information about a customer
+hash -> label info
+
+An address
+array -> single thing 
+
+The names of the first 150 pokemon, in order
+array -> order matters!
+
+All the meals you serve in your restaurant
+array -> list of things
+
+Details about a meal served by your restaurant, such as name, price, and allergy info
+hash -> label info about a single item
+
+Details about all the meals your restaurant serves
+hash -> lots of objects with a piece of data

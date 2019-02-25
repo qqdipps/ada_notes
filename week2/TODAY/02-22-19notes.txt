@@ -1,0 +1,32 @@
+Using Git to Collaborate
+
+Description:https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-diff-pull-and-merge.md
+
+Instruct git to ignore certain files
+  $ touch .gitignore
+  And add the following lines to it
+
+  # Don't push secrets to GitHub!
+  secret-secrets.txt
+  And then add the .gitignore file to git, like you would any other file
+
+  $ git add .gitignore
+  $ git commit -m "Add .gitingore file, ignore secret-secrets.txt"
+Use the git show and git diff commands to review changes
+Pull down someone else's changes to a git repository from GitHub
+Resolve simple merge conflicts
+
+Command	Description
+git init	Initialize an empty git repository
+git clone <URI>	Initialize a git repository from the GitHub repository at the URI
+git remote -v	See where you cloned this repository from
+git status	See the current state of a git repo
+git diff	Show unstaged changes
+git add <file>	Stage (mark as ready to commit) a file
+git diff --staged	Show staged changes
+git commit	Commit all staged files. Will drop into an editor unless the -m <message> option is provided.
+git log	See a summary of all previous commits
+git show	Show the most recent commit
+git show <hash>	Show the commit with that hash
+git pull	Pull down all new commits from GitHub
+git push	Push all local commits to GitHub   

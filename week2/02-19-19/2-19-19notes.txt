@@ -1,0 +1,134 @@
+
+
+GIT
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-intro-to-git.md
+
+Learn the What, Why, and How of Version Control
+  distrubution, version , control , (vs centralized)
+  multiple people working together to build a single project
+
+
+Make a local copy of a repository by cloning it
+
+
+Track changes to files with Git 
+
+you finish a new feature
+you write code that necessitates two or more lines of comments to explain
+you make a change to one file that necessitates a change in another
+you change the method signature of a method that's already in Git
+
+Document our change in with a good commit message
+
+
+
+git is a tool developed by ppl at github.com <- hosting, ecosystem, feature, tool 
+git is NOT github.com 
+
+struct proj- each proj has folder/repo 
+git compatible folder -> clone 
+
+
+GEMS -> libraries -> packaged code -> shared and distributed.
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/intro-to-ruby-gems.md
+Be able to add a gem to your computer.
+require a gem and use it in your projects
+Have a basic grasp of how to use:
+    Awesome Print
+    Colorize
+    Pry
+    Faker
+
+Awesome Print
+  What does the gem do?
+
+  How do you install the Gem and use it in your application? 
+    # Installing as Ruby gem
+    $ gem install awesome_print
+  How would it be useful? 
+    require "awesome_print"
+    ap object 
+
+Colorize
+  What does the gem do?
+  How do you install the Gem and use it in your application?
+  How would it be useful?
+
+Pry
+  What does the gem do?
+  How do you install the Gem and use it in your application?
+  How would it be useful?
+
+Faker
+  What does the gem do?
+  generates code for examplescd
+  How do you install the Gem and use it in your application?
+  How would it be useful?
+
+
+
+PRY 
+What does this Gem do on a high level?
+
+How do you use it? Provide an example
+What kind of syntax does it require?
+Provide an example of a situation where it would be useful. 
+
+
+
+
+EXCEPTIONS 
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/raising-exceptions.md
+ exceptions to indicate that something has gone wrong.
+
+ ArgumentError ->  alert the user that the provided argument to a method is invalid for some reason
+
+Pair Programming
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/programming-techniques-pairs-or-solo.md
+
+DRIVER
+  Controls the mouse/keyboard, Deals with the details
+NAVIGATOR
+  Steering, mental load, pause, ask questions, 
+  thinks higher level Watches for typos, logical errors
+
+
+Make sure to regularly rotate roles!
+  rotate-rotate- pomodero technique
+Anyone can change anything
+
+Be patient, respectful, and open
+Resolve disagreements civilly
+
+STEPS
+
+1. Start with a reasonably well-defined task before you sit down
+   same page
+    solving same task
+2. Agree on one tiny goal at a time
+    write down steps on paper
+3. Rely on your partner, support your partner
+4. Talk a lot!
+    even while coding
+5. Sync up frequently
+6. Take a moment to celebrate as you complete tasks and overcome problems
+7. Switch roles often - at least every half hour
+
+ Assume that you and your partner are both amazing.
+
+ Be mindful, listen, eye contact, active listen, thank for sharing 
+
+Feedack->
+  During _____, when you did _____,I felt _____. In the future,
+  I’d like to try _____. Is that something you’d be willing to do?
+
+
+SOLO 
+
+Rubberducking
+  talking out code to self 
+Spiking 
+  time boxed exploration
+  ok to be messy, code not likely to be used
+  
+

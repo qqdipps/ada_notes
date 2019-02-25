@@ -1,0 +1,92 @@
+
+Evaluating Compound Conditions: Understanding Precedence
+
+Operations with a higher precedence 
+are evaluated before operations with lower precedence. 
+To change the order in which operations are evaluated, 
+add parenthesis () around the operations you want evaluated first.
+
+Here is an abbreviated Precedence List from highest to lowest precedence:
+
+!, unary +
+**
+unary -
+*, /, %
++, -
+>, >=, <, <=
+<=>, ==, ===
+&&
+||
+
+
+
+Note: unary + and unary - here means assigning a numeric value 
+(Integer or Float) as either positive or negative, e.g. -5, -12.2, +30 and +2.0.
+
+
+ceate parse tree
+  - use least precedence for node
+    - splits right and left
+    repeat until all nums are leafs!
+
+handy for complex expressios. 
+
+
+case command when check if command is equal
+  -can use multiple checks one line 
+    ex: 
+      case command 
+      when !"check", "against", "all", 7
+        puts "checked against all that great all are there."
+      else
+        puts "not there"
+      end
+      # > "checked against all that great all are there."
+        => nil 
+
+
+Methods
+  VOCAB:
+   A method takes an argument 
+      - action: takes
+      - noun: method, argument
+  - puts takes an argument string
+  examples: 
+  puts "something"
+  Math.sqrt(10)
+
+
+  NOTE: assign vs define
+    I define a method, I assign a variable
+
+  Define once
+  Invoke => Use 0, 1, or many X's
+
+  Method signature: first line of defines the nature of the method.
+  Method body: block of code inside between signature and end.
+    - example:
+        def method(paramater)
+          puts "This is my body"
+          return paramater
+        end
+
+      input:  method("This is an argument")
+      output: "This is my body"
+              => "This is an argument"
+
+  evaluate
+    method will evaulate to some value.
+      return object_ref
+      evaluates to object_ref
+
+    variables can be assigned to the evaluation of a method
+    
+
+    RETURN RULES
+      1. can only return one thing
+      2. The method will exit after a return statement
+            -> no code after is executed after return 
+      3. You can have different return statements in different conditionals.
+      
+SCOPE 
+  

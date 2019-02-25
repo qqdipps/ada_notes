@@ -1,0 +1,89 @@
+Debugging in VS Code
+
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${file}"
+        }
+    ]
+}
+- text editor vs IDEs 
+Be able to explain the purpose of an Integrated Development Environment
+Understand how to set up an individual .rb file for debugging in VS
+
+
+Know how to set up break points and use the step functions 
+
+
+Keyword Arguments and Default Values for Parameters
+
+GOOD METHOD IS SOMETHING THATS NOT HARD TO INVOKE 
+
+def coffee_price(type, size, extra_shots, cold) = POO 
+  lots of args, easy to mix up order, all params need val  
+  
+  # Price a venti hot latte with 3 extra shots
+  coffee_price(:latte, :venti, 3, false)
+
+  # Price a tall iced drip
+  coffee_price(:drip, :tall, 0, true)
+
+def coffee_price(type, size, extra_shots: 0, cold: false) = better 
+  key words with default, keywords can be mixed up and all is good. 
+ 
+  # Price for a venti latte with 3 extra shots
+  coffee_price(:latte, :venti, extra_shots: 3, cold: false)
+
+  # Price for a tall iced drip
+  coffee_price(:drip, :tall, cold: true)
+
+  # Price for a grande cappuccino
+  coffee_price(:cappuccino, :grande) 
+
+Differentiate between positional and keyword arguments
+  posistional <- first, regular param,  keyword <- looks like hash val pair
+
+  Use optional arguments to simplify method signatures
+  Add default values to method parameters 
+
+
+
+More Conditionals 
+ √ Meet the ternary operator!
+ √ Discuss postfix conditionals
+ √ Learn about using compound operators 
+    arthmitic 
+    boolean compound 
+      # with a truthy existing value
+      existing_value = "elephant"
+      existing_value ||= "hotdog"
+      existing_value.inspect #=> "elephant"
+
+      # with a falsey existing value
+      existing_value = nil
+      existing_value ||= "hotdog"
+      existing_value.inspect # => "hotdog"
+
+      # with two truthy values
+      existing_value = "elephant"
+      existing_value &&= "hotdog"
+      existing_value.inspect #=> "hotdog"
+
+      # with a falsey existing value and a truthy assignment value
+      existing_value = nil
+      existing_value &&= "hotdog"
+      existing_value.inspect #=> "nil"
+
+      # with a truthy existing value and a falsey assignment value
+      existing_value = "elephant"
+      existing_value &&= nil
+      existing_value.inspect #=> "nil"

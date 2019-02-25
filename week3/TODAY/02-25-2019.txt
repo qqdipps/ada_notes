@@ -1,0 +1,27 @@
+Object Orientation: Overview
+
+
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/classes-overview.md
+
+
+  Learning Goals
+    √ Describe the role that classes fill in Ruby
+    √ Differentiate between classes and instances
+    √ Identify the state and behavior of an object 
+
+  VOCAB  
+    - Objects are used to tie together state and behavior. 
+    - synatical suger for creating common classes-> "", [], {} 
+    Term	Definition	Examples                                          
+      - Object	A representation of an idea within a program. Ties together state (variables) and behavior (methods).	A number, an array, any instance of a class
+      - Class	A type of object. A class is abstract in that it defines what those objects will look like, but doesn't itself have state.	Array, Time
+      - Instance	One particular object. Follows the format defined by its class, but has state that makes it specific.	[1, 2, 3], Time.new(2017, 'jul', 29)
+      - State	Data or attributes an object will keep track of	The elements of an array, the days and years stored in a Time object
+      - Behavior	Methods that rely upon or modify state	Array#sort, Time#friday?  
+
+
+Object Orientation: Classes in Ruby  
+  Learning Goals
+    √ Define, instantiate and use a Ruby class
+    √ Store object state using instance variables
+    √ Define object behavior using instance methods

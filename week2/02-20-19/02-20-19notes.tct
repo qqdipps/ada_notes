@@ -1,0 +1,58 @@
+Testing With Minitest
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/testing-with-minitest.md
+
+Discover techniques to verify our code performs as expected using automated tests
+Learn the syntax of Minitest spec-style testing
+Test code using expectations
+Practice spotting nominal and edge cases.
+Have a basic grasp on what Rake & Rakefiles are
+
+
+assertion(more Cish) vs  spec style(what we will be using -> sim to wht we will be using with js)
+
+project
+  lib 
+   file.rb
+  specs 
+    file_spec.rb
+  Rakefile 
+
+Test boundries -> EDGDES 
+  ie hour < 23 check 23 so that < can be checked  
+
+
+
+AAA
+  ARRANGE -> vars
+  ACT  -> method call
+  ASSERT -> compare result to expectation
+
+
+CONVENTION 
+
+  "file name of code being tested"_spec.rb
+
+  # clock_spec.rb
+  require "minitest/autorun"
+  require "minitest/reporters"
+
+  require_relative "clock"
+
+  Minitest::Reporters.use! #minitest COLOR, RED_GREEN_REFACTOR
+
+Step 1: Create a describe block
+  describe block indicates that this contains a suite of tests.
+  method
+  can be nested but not in it block
+Step 2: Create an it block
+  it block which is a test-case.
+  describes what is being tested
+  1 test
+  1 test may have mutiple assertions
+Step 3: Add an expectation
+  expectation which is a method call that describes a condition it expects the given item to meet.
+  assertion 
+
+  GitHub and the Command Line 
+  git remote -v
+  

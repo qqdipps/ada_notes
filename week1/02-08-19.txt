@@ -1,0 +1,69 @@
+Submitting Your Projects via GitHub
+  GOALS :
+    √ Understand that, at Ada, in order to submit projects, each person will need to fully open an appropriate Pull Request
+
+    √ A Pull Request will require each person to fork the repo from an organization to their personal account, to make code changes, and then to open the PR
+
+    √ Understand that each PR should be appropriately named, and should have answers to the comprehension questions
+
+
+  VOCAB 
+
+    REPO, FORK, PR
+
+  PROCESS 
+    - Fork the project repo from the Cohort project onto your personal account, so you have your own copy of the repo
+    - On your fork of the repo, create a file, add code to the file, and then commit those changes so they are saved
+    - Begin opening a Pull Request from your repo against the Cohort project repo
+    - Fill out the title and answer the comprehension questions
+    - Check your work!
+    - Submit
+
+    1. fork proj repo
+    2. create file.rb, add code, commit.
+    3. open PR 
+    4. fill out title and QA
+    5. check work!
+    6. SUBMIT
+
+-----------------------------------------------------------------------------------------------------------
+
+Intro to Data Structures: Arrays and Hashes
+  GOALS: 
+   √ Store collections of values using arrays and hashes
+   √ Use loops to iterate through an array or hash
+   √ Decide whether an array or a hash is appropriate for a given problem
+    Combine arrays and hashes into more complex data structures 
+
+
+  VOCAB 
+    accessing, assigning
+
+
+  FORMATTING NESTED DATA STRUCTURES 
+    menu = [
+    {
+      name: 'beet salad',
+      price: 6.75,
+      allergens: ['nuts']
+    },
+    {
+      name: 'quiche',
+      price: 10.00,
+      allergens: [
+        'gluten',       #<---------- can even break up more!
+         'dairy'
+         ]
+    },
+    {
+      name: 'molten chocolate cake',
+      price: 8.50,
+      allergens: []
+    }
+  ] 
+
+    break it up and indent!!!
+
+
+  
+
