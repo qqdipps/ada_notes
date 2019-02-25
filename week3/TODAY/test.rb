@@ -1,4 +1,6 @@
 class Product
+  # attr_accessor :peanuts
+
   def name
     return @name
   end

@@ -21,6 +21,7 @@ Object Orientation: Overview
 
 
 Object Orientation: Classes in Ruby  
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/classes-in-ruby.md
   Learning Goals
     √ Define, instantiate and use a Ruby class
     √ Store object state using instance variables
@@ -40,3 +41,10 @@ Object Orientation: Classes in Ruby
     Writer Method	Instance method that sets the value of an instance variable. Also known as a setter or mutator.	def email=(new_email)
         @email=new_email
     end
+
+Classes Part 2: Helper Methods and Self
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/classes-part-2.md
+
+  Learning Goals
+    √ DRY up repeated code using helper methods
+    √ Use Ruby's self keyword to refer to the current object
