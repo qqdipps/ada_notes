@@ -25,3 +25,18 @@ Object Orientation: Classes in Ruby
     √ Define, instantiate and use a Ruby class
     √ Store object state using instance variables
     √ Define object behavior using instance methods
+
+  Classes Vocabulary
+    Term	Definition	Example                                          
+    Object	A programming concept that ties together state (variables) and behavior (methods).	
+    Class	Definition of what an object looks like, using Ruby's class keyword. The first letter is always capitalized.	class User
+    Instance	One particular object. Built using a class's new method.	ada = User.new
+    Instance Variable	A variable attached to a particular instance of a class. Also known as an attribute. Always begins with an @. Not visible outside that class.	@name
+    Instance Method	A method attached to a particular instance of a class. Often relies on or modifies instance variables. Can be invoked from outside that class using . notation.	def summary()
+    Constructor	A special instance method that is called automatically when a new instance of a class is created. Takes care of any initial setup. Any arguments passed to new will be passed to the constructor.	def initialize(name, email)
+    Reader Method	Instance method that returns the value of an instance variable. Also known as a getter or accessor.	def email
+        return @email
+    end
+    Writer Method	Instance method that sets the value of an instance variable. Also known as a setter or mutator.	def email=(new_email)
+        @email=new_email
+    end
