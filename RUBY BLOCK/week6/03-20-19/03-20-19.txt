@@ -1,0 +1,23 @@
+Commands and Queries
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/commands-queries.md
+
+  Learning Goals:
+    Differentiate between commands and queries in software systems
+    Explain how splitting methods into commands and queries can help us write better software
+
+
+  Some methods are designed to change their object
+
+  Command: change the state of the system, while others are meant to return a result without changing it.
+  Query: return a result, without changing anything
+
+
+Making Post Requests
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/api-post.md
+
+  Learning Goals
+    Identify the differences between a GET and POST request.
+    Use Postman and HTTParty to make a POST request to save data to an api.
+    Write tests to verify the results of a POST request using the VCR gem.
+
+    

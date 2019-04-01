@@ -1,0 +1,113 @@
+Intro to the web
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/the-web.md
+
+  Differentiate between a static and dynamic website
+  Define the terms "front-end," "back-end," and "full-stack"
+  Understand relationship between clients and servers
+  Relate the browser's role to the request/response cycle
+  Be aware of web standards & browser compatibility 
+
+❮ Intro to HTML ❯
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/html-intro.md
+
+  Learning Goals
+    √ Understand HTML syntax & vocabulary 
+      Markup language 
+      Element - (official name)
+      HTML Tag - (tag unoffical name of Element)
+        Every piece of website content is 'wrapped' in an HTML element.
+
+        Opening tags and closing tags
+          <tag>Content</tag>
+
+        self-closing elements 
+          <img src="/imgs/kittens_in_a_basket.jpg">
+          These elements do not 'wrap' around any content,
+           src attribute to link to the image's source
+
+        Nested tags
+          <nav>
+            <h1>Startrly</h1>
+          </nav> 
+          if h1 is closed after nav, validation error. (browser renders what it can, NO ERROR MESSAGES)
+
+
+    √ Can identify what tags are most appropriate for specific content
+    √ Can view document in a browser  
+
+  home page is always index.html file (convention)
+    <!-- index.html -->
+    <!DOCTYPE html> always use, otherwise broweser enters quarks mode and tries to guess, NOT GOOD
+    <html> everything goes in html document excet for DOCTYPE
+      <head> sets up page not what is rendered
+        <meta charset="UTF-8">
+        <title>This site should have a title!</title>  <- tab title and tool tip hover
+      </head>
+      <body> main part of display <---- see common_html_tags.html in intro_html folder. 
+        <!-- Your code goes here! -->
+      </body>
+    </html> 
+
+  BEST PRACTICES
+    Use HTML to accurately describe the structure of content of a page, not presentation
+    Use proper indentation
+    All content should be wrapped by an element
+
+Sectioning Elements
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/content-hierarchy.md
+  
+  Learning Goals
+    Can organize content using semantic sectioning tags
+    Know why we organize content with semantic sectioning tags 
+
+  <body></body>
+
+  <div></div>
+
+  <section></section>
+
+  <article></article>
+
+  <nav></nav>
+
+  <aside></aside>
+
+  <header></header>
+
+  <footer></footer>
+
+  <main></main> 
+
+  ELEMENT RELATIONSHIPS
+    When elements become nested inside of each other they start to form relationships.
+      An element that is inside of another is a child element
+      The element wrapping a child is its parent
+      Elements on the same level as each other are sibling elements 
+
+  VOCAB 
+    Semantic
+    Sectioning
+    Parent
+    Child
+    Sibling
+
+CSS { display: intro; }
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/css-intro.md
+
+  Learning Goals
+   √Identify parts of CSS Syntax
+      selector: what you want to change
+      property: what part you want to change
+      value: is how you want to change it. 
+
+      CSS rule-set with a declaration block
+        selector {   <------- rule-set = selection + declaration
+          property: value;   <-----  declaration = property and value
+          property: value;   <-----
+        } 
+    
+  
+    Apply CSS styles to HTML
+    Use selectors to target specific elements to add custom style 
+
+     <link href="styles/style.css" rel="stylesheet">  <---- in header, use relative path ../ to go out.

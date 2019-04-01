@@ -1,0 +1,62 @@
+Exception Handling In Ruby 
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/exception-handling.md
+
+  RAISE == THROW 
+  RESCUE == HANDLE == CATCH 
+  bubble up !
+
+    Explain how exception handling works
+      - class with hierchy
+        - in ruby all sub-class of exception 
+        - most are sub classes of standard error 
+        - attributes: look at ruby docs 
+        - behvior: ""
+      - we raise an instance of type of exception
+
+    Create begin-rescue blocks to "catch" exceptions
+      - multiple exceptions should rescue least specific to most specific error 
+      - w/o specfic rescue exception sub class, all errors inheriting from StandardError will be rescued. 
+    Evaluate when to use exceptions 
+
+    Raise an Exception When:
+      A method is given invalid arguments
+      Negative price
+      Some prerequisite condition isn't true
+      An order without any products
+      Some required resource can't be found or is invalid
+      orders.csv doesn't exist
+      onlineorders.csv doesn't contain order information
+      There's a problem external to Ruby
+      User pressed Ctrl-C
+      Note that many of these are handled automatically by Ruby!
+
+    Don't Raise an Exception When:
+      A search yields no results
+      No order with that ID
+      The user quits via a normal method
+      Types quit at the prompt
+
+      Exception	An object describing something that went wrong with a program. If not handled, will cause the program to terminate.
+        Stack Trace	The stuff Ruby dumps to the screen when it hits an unhandled exception. Describes exactly what the program was doing when the exception occurred.
+        raise	Ruby keyword used to cause an exception to take effect. Often used as a verb.
+        begin	Ruby keyword used to mark the beginning of a block of code that might produce an exception.
+        rescue	Ruby keyword used to specify code to execute if an exception happens. Attached to a begin block.
+        ensure	Ruby keyword used to specify code that must execute, even if there's an unhandled exception. Attached to a begin block. Not covered in this lecture.
+        Throw	Synonym for raise
+        Catch	Synonym for rescue
+        Finally	Synonym for ensure
+
+
+Creating Custom Exceptions
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/custom-exceptions.md
+
+  Learning Goals
+    Create custom exception classes
+    Use custom exception classes
+
+    RECOMMEND INHERITING FROM STANDARD ERROR rather than exception 
+    needs require_relative or same file 
+    nothing needs to be in the class, all the things we care about are inherited from standard error. 
+
+    not too many times is required, not necassery, but ok to do even if it feels contrived at Ada. 
+

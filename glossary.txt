@@ -1,9 +1,31 @@
 02-06-19: NOS
 02-07-19: precedence; parse tree; case; methods; scope; 
 02-08-19: hwmk subissions; git; array; hash;
-02-14-19: enumerable;
+02-14-19: enumerable
+
+
 02-19-19: git; gem; exceptions; pair programming
 02-20-19: minitest; TDD; git cont;
 02-21-19: vs debugger; keyword args & defualt params; More Conditionals;
 02-22-19: .gitignore; git menu keys; 
+
 02-25-19: intro to OOP; classes;
+02-26-19: classes/objects vs hashes; hashes re-visit;
+02-27-19: CSV as DB; class methods; self
+
+03-03-19: inheritance; 
+03-04-19: UML; regex; abstract class; polymorphism; template methods
+03-06-19: References and Values
+03-07-19: Exception Handling; custom exceptions;
+
+03-11-19: user stories; SimpleCov; Guard; spec_helper;
+03-12-19: regex; 
+03-13-19: scripting;
+
+03-18-19: web, HTTP, API (intro); HTTParty; APIs and Authorization;
+03-19-19: Testing APIs; VCR; 
+03-20-19: Commands and Queries; Get/POST; Postman
+03-21-19: The MVC Pattern; 
+
+WEEK 7
+04-01-19: web(intro); html(intro); Sectioning Elements; CSS(intro)

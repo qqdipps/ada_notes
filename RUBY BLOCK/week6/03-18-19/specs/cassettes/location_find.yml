@@ -1,0 +1,351 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Great%20Pyramid%20of%20Giza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6ffdd85e710918e423aa93c4c59eba911553099389; expires=Thu, 19-Mar-20
+        16:29:49 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba9112d89102a61-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"72860647","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"4420397","boundingbox":["29.9781249","29.9801279","31.1330737","31.1354031"],"lat":"29.9791264","lon":"31.1342383751015","display_name":"Great
+        Pyramid of Giza, Cause way, Kom al Akhdar, Giza, Giza Governorate, 12561,
+        Egypt","class":"tourism","type":"attraction","importance":0.97861371244118,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:49 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Hanging%20Gardens%20of%20Babylon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d737cb0f9e5ea03dcfd8a4d8b372cddb71553099390; expires=Thu, 19-Mar-20
+        16:29:50 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba91134dc962a13-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"331034446046","licence":"https:\/\/locationiq.com\/attribution","lat":"37.03617","lon":"27.2433","display_name":"Gardens
+        Of Babylon, Bodrum, Mugla, Turkey","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.225},{"place_id":"330073392873","licence":"https:\/\/locationiq.com\/attribution","lat":"40.01736","lon":"23.52207","display_name":"The
+        Gardens Of Babylon, Central Macedonia, Greece","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.225},{"place_id":"333350096688","osm_type":"node","osm_id":"4196332489","licence":"https:\/\/locationiq.com\/attribution","lat":"-8.412761","lon":"115.238643","display_name":"Hanging
+        Gardens, Banjar Susut, Desa Buahan, Payangan, Kec. Gianyar, Bali, Indonesien,
+        Gianyar, Gianyar, Bali, Indonesia","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.167},{"place_id":"331129704433","osm_type":"way","osm_id":"513860736","licence":"https:\/\/locationiq.com\/attribution","lat":"-8.41349","lon":"115.239229","display_name":"Hanging
+        Gardens, Gianyar, Gianyar, Bali, Indonesia","boundingbox":["-8.4146218","-8.4124043","115.2381565","115.2402159"],"importance":0.167},{"place_id":"331196667129","licence":"https:\/\/locationiq.com\/attribution","lat":"-60.717","lon":"-45.601","display_name":"Hanging
+        Gardens","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.167},{"place_id":"332737288316","licence":"https:\/\/locationiq.com\/attribution","lat":"48.68664","lon":"-113.71484","display_name":"Hanging
+        Gardens, Glacier County, Montana, United States","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.167},{"place_id":"330420073168","osm_type":"node","osm_id":"714872940","licence":"https:\/\/locationiq.com\/attribution","lat":"24.323927","lon":"55.905191","display_name":"Hanging
+        gardens, Mahadah, Buraymi, Oman","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.167},{"place_id":"330366637665","osm_type":"node","osm_id":"3801488042","licence":"https:\/\/locationiq.com\/attribution","lat":"52.082235","lon":"4.324845","display_name":"New
+        Babylon Gardens, Rivierenbuurt-Noord, The Hague, Zuid-Holland, Netherlands","boundingbox":["-60.717","52.082235","-113.71484","115.2402159"],"importance":0.165},{"place_id":"332132132676","osm_type":"way","osm_id":"12893908","licence":"https:\/\/locationiq.com\/attribution","lat":"36.9409","lon":"-111.474979","display_name":"Hanging
+        Gardens Trail, Coconino County, Arizona, United States","boundingbox":["36.936717","36.942768","-111.47622","-111.471955"],"importance":0.1645},{"place_id":"330680009847","osm_type":"way","osm_id":"531664366","licence":"https:\/\/locationiq.com\/attribution","lat":"41.935168","lon":"-87.833752","display_name":"Hanging
+        Gardens Banquet Rooms, 8301, West Belmont Avenue, River Grove, Cook County,
+        Illinois, United States, 60171","boundingbox":["41.9350622","41.935503","-87.8340587","-87.8335727"],"importance":0.1645}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:50 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Colossus%20of%20Rhodes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:51 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3e49db551fa304dbb8a85aea8c15b0901553099391; expires=Thu, 19-Mar-20
+        16:29:51 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba9113ccabb2a37-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"23658857","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"2363415795","boundingbox":["36.3396576","36.3397576","28.2002664","28.2003664"],"lat":"36.3397076","lon":"28.2003164","display_name":"Colossus,
+        \u039a\u03b1\u03bb\u03bb\u03b9\u03b8\u03ad\u03b1\u03c2, Faliraki, \u0394\u03ae\u03bc\u03bf\u03c2
+        \u03a1\u03cc\u03b4\u03bf\u03c5, Rhodes Regional Unit, South Aegean Region,
+        Aegean, 85100, Greece","class":"amenity","type":"bar","importance":0.211,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/food_bar.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:51 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Pharos%20of%20Alexandria
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc9e7b67135917d023b9ef3d6de1ab35d1553099392; expires=Thu, 19-Mar-20
+        16:29:52 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba911442ef52a55-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"140292211","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"255811087","boundingbox":["30.9478905","30.9480211","29.5234869","29.5236384"],"lat":"30.94795585","lon":"29.5235626430011","display_name":"Pharos
+        of Abusir, North Coast Road, Sidi Kerir tanker facility, Salsabeel, Alexandria
+        Governorate, Egypt","class":"historic","type":"archaeological_site","importance":0.50108919297929,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_archaeological2.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:52 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Statue%20of%20Zeus%20at%20Olympia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd658afd90df7ddf8e7074d36e40662ec1553099393; expires=Thu, 19-Mar-20
+        16:29:53 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba9114bba682a55-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"50942112","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"3988791718","boundingbox":["37.6378588","37.6379588","21.6299563","21.6300563"],"lat":"37.6379088","lon":"21.6300063","display_name":"Statue
+        of Zeus at Olympia, \u0395\u039f74, Ancient Olympia, Ancient Olympia Municipality,
+        Elis Regional Unit, West Greece Region, Peloponnese, West Greece and Ionian
+        Sea, 27065, Greece","class":"tourism","type":"artwork","importance":0.88151155186229,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_art_gallery2.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:54 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Temple%20of%20Artemis
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de326ecf1ae916d600f9a43a3005a58311553099395; expires=Thu, 19-Mar-20
+        16:29:55 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba91152fd742a31-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"69727267","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"5919442848","boundingbox":["40.7800586","40.7801586","24.7147122","24.7148122"],"lat":"40.7801086","lon":"24.7147622","display_name":"The
+        Temple of Artemis, \u0397\u03c1\u03b1\u03ba\u03bb\u03b5\u03af\u03bf\u03c5,
+        Thassos, \u0394\u03ae\u03bc\u03bf\u03c2 \u0398\u03ac\u03c3\u03bf\u03c5, Thasos
+        Regional Unit, East Macedonia and Thrace Region, Macedonia - Thrace, 64004,
+        Greece","class":"historic","type":"archaeological_site","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_archaeological2.p.20.png"},{"place_id":"105150072","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"115555874","boundingbox":["32.2816819","32.2819422","35.8918544","35.8921195"],"lat":"32.2818476","lon":"35.8919851222059","display_name":"Temple
+        of Artemis, 20, Jerash, Jarash, Jordan","class":"building","type":"ruins","importance":0.301},{"place_id":"72426315","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"6174779109","boundingbox":["32.2815586","32.2816586","35.891071","35.891171"],"lat":"32.2816086","lon":"35.891121","display_name":"The
+        Temple of Artemis, 20, Jerash, Jarash, Jordan","class":"tourism","type":"information","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/amenity_information.p.20.png"},{"place_id":"139887518","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"254316539","boundingbox":["38.4787219","38.4797693","28.0301613","28.0320213"],"lat":"38.4792644","lon":"28.0310821761734","display_name":"Temple
+        of Artemis, \u0130zmir-U\u015fak Yolu, Ahmetli merkez, Ahmetli, Manisa, Aegean
+        Region, 45310, Turkey","class":"tourism","type":"attraction","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"},{"place_id":"122349967","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"183387860","boundingbox":["38.4819812","38.4823656","28.027492","28.0283853"],"lat":"38.48217335","lon":"28.0279386484865","display_name":"Temple
+        of Artemis, \u0130zmir-U\u015fak Yolu, Ahmetli merkez, Ahmetli, Manisa, Aegean
+        Region, 45310, Turkey","class":"historic","type":"ruins","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_ruin.p.20.png"},{"place_id":"173555010","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"426829731","boundingbox":["37.8529695","37.8535548","27.5268672","27.5278652"],"lat":"37.85326215","lon":"27.5273661921929","display_name":"Temple
+        of Artemis, \u0130zmir - S\u00f6ke Yolu, Tekin, Germencik, Ayd\u0131n, Aegean
+        Region, 09700, Turkey","class":"historic","type":"ruins","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_ruin.p.20.png"},{"place_id":"194693501","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"560511793","boundingbox":["37.4006812","37.4008183","25.2662148","25.2664119"],"lat":"37.40074975","lon":"25.2663133407744","display_name":"Temple
+        of Artemis, Sacred Road, Agios Ioannis Diakoftis, Municipality of Mykonos,
+        Mykonos Regional Unit, South Aegean Region, Aegean, 84600, Greece","class":"historic","type":"ruins","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_ruin.p.20.png"},{"place_id":"137468235","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"244420322","boundingbox":["37.6219278","37.6221595","26.0595614","26.059883"],"lat":"37.6220436","lon":"26.0597222063747","display_name":"Temple
+        Of Artemis, \u03a7592, Nanouras, \u0394\u03ae\u03bc\u03bf\u03c2 \u0399\u03ba\u03b1\u03c1\u03af\u03b1\u03c2,
+        Regional Unit of Ikaria, North Aegean Region, Aegean, 83301, Greece","class":"historic","type":"ruins","importance":0.301,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/tourist_ruin.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:55 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.com/v1/search.php?format=json&key=4761fe29bfc618&q=Mausoleum%20at%20Halicarnassus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Mar 2019 16:29:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d635ea38a388be842bdb283b4a90e27011553099396; expires=Thu, 19-Mar-20
+        16:29:56 GMT; path=/; domain=.locationiq.com; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ba9115a8be62a2b-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"151312430","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"310931457","boundingbox":["37.0374405","37.0381636","27.4236543","27.4245892"],"lat":"37.03785995","lon":"27.4241280469557","display_name":"Mausoleum
+        at Halicarnassus, Turgutreis Cad., Tepecik Mh., Bodrum, Mu\u011fla, Aegean
+        Region, 48400, Turkey","class":"tourism","type":"attraction","importance":0.61612825880798,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 20 Mar 2019 16:29:56 GMT
+recorded_with: VCR 4.0.0

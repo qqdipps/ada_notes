@@ -1,0 +1,57 @@
+Intro to the Web, HTTP and APIs
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/api-intro.md
+  
+  Learning Goals
+    Examine the HTTP protocol; what does it do? How does it do it?
+    Talk about the most common server architecture on the internet: Client/Server
+    Discuss the difference between websites and APIs
+    Explore an API using the browser
+    Define the key pieces of the request/response cycle
+    Request: HTTP verb and path
+    Response: Status code
+
+  VOCAB
+    Resource - SOMETHING YOU ACCES THROUGH SERVER 
+    A website - pages built with HTML, CSS and JavaScript, designed to be interpreted by a browser and consumed by a human -> with display instructions. 
+    API (Application Programming Interface) is a resource that is designed to be used by machines -> No display instructions.
+
+    VERB - PATH - opt payload
+
+Consuming an API with Ruby
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/api-using-httparty.md
+
+  By the end of this lesson, students should be able to...
+    Consume an API in Ruby
+    Identify the pieces of an HTTParty response
+    Handle errors from an API
+    Wrap API code in a class
+
+  httparty which can be used to query web services and examine the resulting outpu
+    httparty "https://api.stackexchange.com/2.2/questions?site=stackoverflow"
+
+    how to use it: 
+
+    require 'httparty'
+
+    url = "https://dog.ceo/api/breeds/image/random"
+    response = HTTParty.get(url) 
+
+
+  see api-wrapper-class.rb
+    How does the driver code interact with the wrapper class?
+    How is the code to build and send the request different than what we had previously?
+    What does the wrapper class do if it encounters an error?
+    What does the call to self.new in get_passes do?
+    What is returned from get_passes?
+
+APIs and Authorization
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/api-auth.md
+  
+  Use an API that requires an authentication token
+  Store API credentials securely
+  Recognize and use environment variables in Ruby with the dotenv gem
+
+  Authentication: is this request authentic, did it really come from you?
+  Authorization: are you authorized to do that action?
+
+  .env ADD .gitignore FIRST THING!!!!!!!

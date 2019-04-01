@@ -1,0 +1,15 @@
+Class Methods & Self
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/class-methods-and-self.md
+
+  Learning Goals 
+   √ Review what we've learned about classes so far:
+      Constructor (initialize)
+      Attributes (stored in instance variables)
+      Instance Methods
+    Discover new functionality within classes:
+      Class Methods
+      self
+      Class variables
+    Examine why we'd use one type of method over another
+
+    

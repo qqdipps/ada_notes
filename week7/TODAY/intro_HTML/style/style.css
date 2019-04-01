@@ -1,0 +1,19 @@
+body {
+  margin: 70px
+}
+h1 {
+  color: orange;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+p {
+ color: gray;
+ text-align: justify;
+} 
+
+li{
+  color: palevioletred;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+

@@ -1,0 +1,59 @@
+ User Stories
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/user-stories.md   
+  
+  As a _____________ (who)
+  I want to _______________ (what)
+  so that ________________  (why)
+
+  Learning Goals
+    Explain the concept of a user story.
+    Write user stories to gather requirements.
+
+   avoid...
+    Implementation details
+    Making a story too big and complex. 
+      -> think SRP, descirbes one specific thing a user can due. 
+
+Code Coverage Using SimpleCov
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md
+
+  DIRECTIONS: 
+    To add SimpleCov to your test suite first run gem install simplecov in the terminal.
+
+    Then in your spec file add the following lines to the top of the file.
+
+    require 'simplecov'
+    SimpleCov.start
+    Finally, add the coverage directory to your .gitignore file:
+
+    $ touch .gitignore
+    $ echo "coverage" >> .gitignore
+    $ git add .gitignore
+    $ git commit -m "Add coverage directory to .gitignore file"
+
+  SPEC HELPER:
+   # specs/spec_helper.rb
+    require 'simplecov'
+    SimpleCov.start do
+      add_filter %r{^/specs/}
+    end
+    require 'minitest'
+    require 'minitest/autorun'
+    require 'minitest/reporters'
+    require 'minitest/pride'
+
+    # Require any classes 
+    # ex require_relative 'lib/foo.rb'
+
+    Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
+Testing with Guard and Minitest
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/testing-with-guard.md
+
+  touch Guardfile 
+    guard :minitest, bundler: false, autorun: true, rubygems: false do
+      # With Minitest Reporters
+      watch(%r{^spec/(.*)_spec\.rb$})
+      watch(%r{^lib/(.+)\.rb$})         { |m| "spec/#{m[1]}_spec.rb" }
+      watch(%r{^spec/spec_helper\.rb$}) { 'spec' }
+    end

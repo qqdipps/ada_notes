@@ -1,0 +1,9 @@
+Object Inheritance
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/object-inheritance.md
+
+  Describe objects in terms of is-a relationships
+  Use inheritance to indicate a hierarchy of ownership or lineage between classes
+  Explore overriding method definitions in subclasses
+  Use super to invoke the behavior of a base class in a subclass
+
+  

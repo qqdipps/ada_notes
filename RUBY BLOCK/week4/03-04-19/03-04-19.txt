@@ -1,0 +1,55 @@
+Object-Oriented Design: Breaking Down the Problem
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/oo-design.md
+
+  Learning Goals
+    Break down a problem into a UML diagram
+    Identify two types of relationships in UML diagrams 
+
+    write out things/entites -> prob become classes but not there yet. 
+    attributes -> ie strings/integers/ arrays 
+    verbs -> methods 
+     
+
+Introduction to Regular Expressions
+  https://github.com/beccaelenzil/regex-lesson 
+
+  Test a String against the regular expression with the Regex's match method.
+  match compares the string to the pattern, character-by-character.
+  returns a MatchData object upon a match
+  returns nil if the String does not match the pattern.
+  match will return a MatchData object if any substring matches the pattern, not necessarily the entire String.
+
+
+  Regular Expressions can also be compared using the =~ operator.
+  The =~ operator returns the index of the first match in the string.
+  Both match and =~ will return a truthy result if any substring matches the pattern. 
+
+Inheritance Idioms
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/inheritance-idioms.md
+
+
+  Inheritance is a good tool but shouldn't be used that often. 
+    - Remember Sandi Metz "Inheritance is good if the sub-class takes on ALL behaviors of Super-class and Super-class changes less than sub-class"
+  Learning Goals
+    Define the following terms
+    Abstract class
+      - Never intiated 
+      - Template class (often includes template methods)
+      - ex CsvRecord 
+    
+    Template method
+      - method signature 
+        -  raises NotImplementedError 
+        OR
+        - a generic default action
+      - Sets a pattern 
+
+    Polymorphism
+      - Many forms 
+      - Different objects are treated in the same way. 
+      - 
+
+
+    Write code that extends an abstract class
+    Identify and implement template methods
+    Take advantage of polymorphism

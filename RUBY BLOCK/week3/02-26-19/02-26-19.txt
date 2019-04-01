@@ -1,0 +1,63 @@
+Hashes, Classes, and You 
+
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/01-ruby-fundamentals/hashes-classes-and-you.md
+
+  Revisit Hashes
+
+  Compare and contrast Hashes and objects
+    Classes  | Hashes
+    ---      | ---
+    Use _instance variables_ to store data | Use _key/value_ pairs to store data
+    Stored data can be of any type, including other objects and hashes | Stored data can be of any type, including other objects and hashes
+    Have methods | Do not have methods
+    Retrieve data with dot notation (`person.last_name`) | Retrieve data with square brackets (`person[:last_name]`)
+    Make copies with `.new` | Make copies by duplicating all keys / values
+    Require a pre-written class definition | Can be created on the fly
+
+    Classes take a little more up-front work. You need to know roughly what your data looks like in advance, and build the class to match. The advantage gained by this effort is that you get methods, including a constructor to quickly make many instances.
+
+    Hashes are much more dynamic and flexible. They're simpler and lighter-weight than full classes, making them great when you just want to quickly store some data without a bunch of up-front work. They're also great if you don't know in advance what data you'll be storing, like if you're reading data from disk or from the network.
+
+  NOTE: THINGS ARE MORE COMPLICATED. 
+
+
+      This relationship is complicated by a few facts:
+    - `Hash` _is_ a class, so hashes are objects
+    - Hashes can contain objects as values
+    - Objects can contain hashes as instance variables -->
+
+
+Object Composition 
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/object-composition.md
+
+  Learning Goals 
+    Define object composition
+    Compare and contrast three different types of composition relations
+    One-to-many
+        one instance of one class is related to many instances of another class.
+        * many is a potentional -> 1 or 0 also potentional
+        merchant has many products, products belongs to merchant
+        merchant -> product1
+                 -> product2
+                 -> product3
+        EXAMPLES 
+          - On an e-commerce site, one merchant might offer many different products
+          - In a gradebook application, one class might have many students and many assignments
+          - On a social media platform, one user might have many posts, and one post might have many comments
+    One-to-one 
+      Their main use is to split something that could be one big class into two smaller but related classes.
+              merchant -> product1 -> order_id
+                       -> product2 -> order_id
+                       -> product3 -> order_id 
+                       product has a order_id, order_id belongs to a product
+        EXAMPLES 
+          - On an e-commerce site, each order has one shipment (destination address, tracking number, etc)
+          - In a gradebook application, each student has one final grade
+          - On a social media platform, each user has one profile picture
+
+
+    Many-to-many
+              merchant -> product1 -> order_id <- customer1
+                       -> product2 -> order_id <- customer1
+                                               <- customer2
+                       -> product3 -> order_id <- customer2
