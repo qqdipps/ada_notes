@@ -26,16 +26,17 @@ week 5
 03-12-19: regex; 
 03-13-19: scripting;
 
-week 6
+week 6 -- API
 03-18-19: web, HTTP, API (intro); HTTParty; APIs and Authorization;
 03-19-19: Testing APIs; VCR; 
 03-20-19: Commands and Queries; Get/POST; Postman
 03-21-19: The MVC Pattern; 
 
-WEEK 8 (7)
+WEEK 8 (7) -- HTML/CSS
 04-01-19: web(intro); html(intro); Sectioning Elements; CSS(intro)
 04-02-19: Attributes, Classes & IDs; CSS Selectors; Cascade & Inheritance; Box Model, Developer Tools & Default Styles
 04-03-19: Flexbox;
 
-WEEK 9
-04-08-19: intro rails
+WEEK 9 -- RAILS
+04-08-19: intro rails; new rails; Controllers; Views: ERB & Layouts, Testing Responses in Controllers, Route Parameters, show Action, 
+04-09-19: Requests and Responses; HTTP Verbs; CRUD; Status Codes;

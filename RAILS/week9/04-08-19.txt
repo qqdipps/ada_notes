@@ -133,9 +133,10 @@ Intro to Testing Responses in Controllers: Testing the index Action
 
       New Matches (like must_equal)
         must_respond_with :success
-        must_respond_with :redirect
-        must_respond_with :missing
-        must_respond_with :error
+        must_respond_with :redirect  -------> to get this response controller code should use head method 
+        must_respond_with :missing                    like so: 
+        must_respond_with :error                                 head :not_found if @dogs.length < 1
+        must_respond_with :not_found                                   
 
         must_redirect_to "/"
         must_redirect_to root_path
@@ -160,7 +161,9 @@ Intro to Testing Responses in Controllers: Testing the index Action
 
     Nominal case: check that the response is with the HTTP response code of 200 ok
 
-    Edge case: if the view for the index action relies on any variables, check that if those variables are nil or empty, then it still responds with the status code you expect. For example, in the Books app, if the index action is going to show a view that displays all books defined in @books, and that the controller isn't supposed to break if @books is empty, be sure to test that.
+    Edge case: if the view for the index action relies on any variables, check that if those variables are nil or empty, then it still responds with the status code you expect. 
+    For example, in the Books app, if the index action is going to show a view that displays all books defined in @books, 
+    and that the controller isn't supposed to break if @books is empty, be sure to test that.
     Alternatively, if the controller is supposed to redirect in certain cases, be sure to test that.
 
 
@@ -175,7 +178,7 @@ Route Parameters
 
 
   Creating a Parameterized Route
-    get '/books/:id', to: 'books#show'   (DOES NOT NEED TO NAMED :id) <-- we make this ourselves
+    get '/books/:id, to: 'books#show'   (DOES NOT NEED TO NAMED :id) <-- we make this ourselves
 
     :id in the path - this is the parameter, 
       identify it as a route parameter ---> ":"
