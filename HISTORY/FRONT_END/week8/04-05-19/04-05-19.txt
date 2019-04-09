@@ -1,0 +1,23 @@
+Flexbox vs CSS Grid
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/flexbox-vs-css-grid.md
+
+  Understand the strengths of both Flexbox & CSS Grid
+  Be able to decide when to use Flexbox or CSS Grid to solve layout issues
+
+  Flexbox Lays Content Out in One Dimension
+  All content in flexbox flows horizontally or vertically inside a container.
+
+
+
+  how to make grid more responsive:
+
+    header {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  img {
+    margin: .5em;
+  }
+  * {
+    background-color: black;
+  }

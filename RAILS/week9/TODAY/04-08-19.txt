@@ -1,0 +1,205 @@
+What is Ruby on Rails? 
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/what-is-ruby-on-rails.md
+
+  learning goals
+    Answer the question at the top of this document
+      gem, domain specific language to use ruby to build websites.
+    Explain the Rails mantra of Convention Over Configuration
+      use naming conventions to utilize already configured settings?
+    Have a basic understanding of MVC
+      M: state/data
+      v: turns data to html, no business logic, only display!!
+      c: receive HTTP requests, gather data, pass data to view
+    Describe the different parts of an MVC application
+
+    Discuss the problem that MVC solves
+
+
+  The Model
+    Contains data for the application (often linked to a database)
+    Contains state of the application (e.g. what orders a customer has)
+    No knowledge of user interfaces, so it can be reused
+    Similar to many of the Ruby classes we've written so far
+  The View
+    Turns data into HTML
+    Does not contain "business logic", only display logic
+    Similar to the command-line interfaces we've built in the past  
+  The Controller
+    Receive events from the outside world (HTTP requests)
+    Gather data from the model
+    Pass data to the view to be rendered as HTML
+
+Live Code Intro
+https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/live-code-intro.md
+  Learning Goals
+    Explain how the lectures for this week will be organized
+    Create and run a new rails project
+
+
+    The steps to create a new Rails project are:
+
+      rails new project-name*
+        *If there's already a folder for that project, cd into the folder and use . (current directory) as project-name
+      cd project-name
+      git add .; git commit -m "Run rails new"
+      rails db:create
+      rails server 
+
+Controllers
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/controllers.md
+  
+  Learning Goals
+    Refresh on the http request cycle
+      method (verb) path
+    Discuss how a request makes it way through a Rails application
+      GET
+      browser sends request
+      the routes file sends the requested to correct controller
+      controller pulls information from model
+      controller makes information avail to view
+      view is rendered and erb is evaluated
+      controller responds to browser with payload
+    Explore the role of controllers in a Rails application
+      view <--> controller <--> model PLUS handels request from client and sends response
+    √ Create a basic controller using the Rails generate commanda
+      rails generate controller Dogs index show
+    Add an action to a controller
+      add by creating instance method or when generating the model
+    Define a basic route for our new controller action
+      get "/index", to: "dogs#index"
+      get "/show/:id" to: "dogs#show"  <--- uses route param as seen by ":", anything matching this pattern will be sent to show. 
+      config/routes 
+        when i get a GET HTTP request for /books  <-- (url request) I want to send it to books controoler and the index method.
+        get '/books', to: "books#index"
+
+    
+    Routes
+
+      The Rails Router is responsible for dispatching (figuring out what to do with) a new HTTP request
+      It uses the verb and the path to select a controller action
+      Routes are defined in config/routes.rb
+      verb '/url/path', to: 'controller#action'
+      get '/books', to: 'books#index'
+      The order of routes matters
+        what does this mean???? stay tuned according to chris 
+
+
+    Controllers
+
+      A Rails Controller is responsible for handling a request and sending back a response
+      Each controller is a class, and each action is a method
+      Controller class names are usually pluralized, and always end in Controller, like BooksController
+      The controller#action pair in config/routes.rb must match the name of your controller class and action method exactly
+      books#show would look for BooksController and def show
+      A controller BooksController will be defined in the file app/controllers/books_controller.rb
+      To generate a controller run $ rails generate controller Books (can add actions following to pre-setup)
+      Controllers use instance variables to communicate with views 
+
+Views: ERB & Layouts
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/ERB-and-Layouts.md
+ 
+  LGs
+    Discover how to add logic to our html pages with embedded Ruby
+    DRY up our html pages by separating them into views and layouts
+    Learn the special syntax for working with erb
+
+
+    ERB (Embedded RuBy) --> a file preprocessor --> triggered before anything else happens with the file.
+
+    ERB TAGS <% --code here--- %>
+    <% %>: Code Tag: When this tag is found in an ERB view, the Ruby code inside of the tag is run.
+    <%= %>: Value Tag: When this tag is found in an ERB view, the Ruby code inside of the tag is run and the resulting value is converted to a string (by automatically calling to_s). This string is then inserted into the final HTML.
+    <%# %>: Comment Tag: This is considered the same as a comment in Ruby and is completely ignored. Nothing will be put into the final content where this tag is located.
+
+Intro to Testing Responses in Controllers: Testing the index Action
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/intro-to-testing-controllers.md
+
+  LGs
+    Identify the matchers we can utilize with controllers
+    Setup controller tests with HTTP verb and action
+    Understand what sort of functionality ought to be covered by a controller test for the index action
+
+    Controller Testing Tools
+      verifying realistic user workflows
+      send requests from our tests, and to check the responses
+
+      helper method
+        get books_path
+        helper method for each HTTP verb, and each helper method takes the path as an argument.
+
+      Rails controller tests also add several new expectations to use:
+        Testing for a correct HTTP status code in response
+        Testing that a controller redirects correctly
+
+      New Matches (like must_equal)
+        must_respond_with :success
+        must_respond_with :redirect
+        must_respond_with :missing
+        must_respond_with :error
+
+        must_redirect_to "/"
+        must_redirect_to root_path
+        must_redirect_to controller: 'post', action: 'index'
+
+
+      EXAMPLE TESTING INDEX Action
+        The index action takes the following inputs.
+
+          A get HTTP verb and a path
+          And it should respond with:
+
+          An HTTP response code of 200 ok
+          A rendered view
+
+          describe BooksController do
+            it "should get index" do
+              get "/books"
+              must_respond_with :success
+            end
+          end
+
+    Nominal case: check that the response is with the HTTP response code of 200 ok
+
+    Edge case: if the view for the index action relies on any variables, check that if those variables are nil or empty, then it still responds with the status code you expect. For example, in the Books app, if the index action is going to show a view that displays all books defined in @books, and that the controller isn't supposed to break if @books is empty, be sure to test that.
+    Alternatively, if the controller is supposed to redirect in certain cases, be sure to test that.
+
+
+Route Parameters
+   https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/route-parameters.md
+
+  LGs
+    √Describe the role of a route parameter in a web application
+      drys up routes, reuse pattern.
+    √Define a route with a parameter
+      use ":" to identify route param
+
+
+  Creating a Parameterized Route
+    get '/books/:id', to: 'books#show'   (DOES NOT NEED TO NAMED :id) <-- we make this ourselves
+
+    :id in the path - this is the parameter, 
+      identify it as a route parameter ---> ":"
+  
+    any path matching pattern /books/something will be sent to the show
+      note: upcoming We will have access to values that were params in a special hash called params. 
+      (params, which contains all of the route params we saw defined above, is a Rails-defined object)
+
+
+Intro to the show Action
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/08-rails/show-action-intro.md
+
+  Understand the responsibility of the Rails convention show action
+    use route params to find item, then share items details with a view to display it.
+
+  Know a list of nominal and edge cases to consider when testing the show action
+  Use a route parameter in a controller action 
+
+  The show Action
+    Given some information (through route params), 
+    find a specific item, and then share that 
+    specific item's details with a 
+    view to display that specific item's details. 
+
+  Testing
+    Nominal Case: If the instance is in the database, expect to see a response of success
+    Edge Case: If the instance is not in the database, expect to see a response of 404 or :not_found

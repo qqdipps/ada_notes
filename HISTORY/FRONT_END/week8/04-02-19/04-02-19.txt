@@ -1,0 +1,164 @@
+Attributes, Classes & IDs
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/attributes-classes-ids.md
+
+  Learning Goals 📚
+    Know what an Attribute is
+    Differentiate between ID and Classes
+    Identify when to use a Class or an ID
+
+  ATTRIBUTES
+    src and alt are attributes
+      <img src="https://picsum.photos/300/?image=475" alt="Some Lovely Mountains">
+
+  CLASSES
+    classes used to style specific elements.
+    can be reused for multi elements
+    <h1 class="page-title">Hello World!</h1>
+    .page-title {
+      color: gray;
+      font-size: 2.5rem;
+    } 
+
+  ID 
+    more specfic than classes,
+    CSS will style most specific tag
+    must be unique, don't reuse 
+    <h1 id="home-page-title">Hello World!</h1>
+    #home-page-title {
+      color: teal;
+      font-size: 4rem;
+    } 
+    MOSTLY USED FOR JAVASCRIPT, NOT STYLE 
+  
+  Elements with Multiple Classes
+    <h1 class="page-title highlight">Hello World!</h1>
+    .page-title {
+      font-family: helvetica;
+      font-size: 5rem;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+CSS Selectors 
+
+  Learning Goals: 
+    Know a variety of ways of targeting elements with Selectors
+    Identify how to properly use each kind of selector
+
+
+  Attribute Selectors : 
+    (Class and ID are examples of attribute Selectors)
+      <a href="http://www.github.com">Github</a>
+      a[href="http://www.github.com"] { color: olive; }
+
+      more fancy --> a[href*="github"] { color: teal; }
+
+  Psuedo-class 
+    -> adds more STATE to selectors to identify and change
+    :hover
+    :first
+    :first-child           SEE MDN FOR MORE
+    :first-of-type
+
+  Psuedo-elements 
+    -> addes style to LOCATION of opject in document 
+    ::after (:after)
+    ::backdrop 
+    ::before (:before)           SEE MDN FOR MORE
+    ::cue (:cue)
+    ::first-letter (:first-letter) 
+
+  Selectors Based on Relationships (tags, classes or ids)
+    A E    <-- any child E of A (child of child ok)
+    A > E  <-- only direct decendents (only child)
+    E:first-child <-- Any element E that is the first child.
+    B + E  <-- any E elements that is a sibling of B 
+
+  DRY UP CSS: 
+    Multiple Selectors
+      h1, h2, h3  {
+        color: teal;
+        font-family: helvetica;
+      } 
+
+      h1 em, a, .orange {
+        background-color: orange;
+      }
+   
+Cascade & Inheritance 
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/cascade-inheritance.md
+  
+  Learning goasl
+    See how styles can cascade based on nested and related elements
+    See how CSS prioritizes style choices based on the specificity of the selector
+
+  CSS cascade -> style declarations cascade down to elements from many origins. 
+
+  CASCADE Applys last encountered SOURCES...
+    browser's default styles --> 
+    styles specified by a user --> 
+    external style sheets -->
+    beginning of the document -->
+    specific element in the body 
+
+  Specificity
+    priority to the rule w/ more specific selector.  (highest to lowest)
+      1. Inline styles 
+      2. IDs
+      3. Classes, attributes and pseudo-classes 
+        .classes, [attributes], :hover, :focus etc.
+      4. Elements and pseudo-elements 
+        tag name, ::before and ::after
+      
+  Label	Selector	Rank/Point Value from Calculator
+    A	* { }	000                             15
+    B	li.cool { }	011                       7
+    C	li { }	001                           14  
+    D	li::first-line { }	002               12
+    E	ul li { }	002                         11
+    F	ul ol+li { }	003                     9
+    G	ul ol li.red { }	 013                5
+    H	li.red.level { } 021                  4
+    I	style="" 1000                         1
+    J	p { }	001                             13
+    K	div p { }	002                         10
+    L	.ada { }	010                         8
+    M	div p.ada { }	012                     6
+    N	#grace { }	100                       3
+    O	body #grace.ada p { } 112             2
+
+Box Model
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/box-model.md
+
+  Learning goals 
+    Identify the key pieces of the box model:
+      margin
+      border
+      padding
+      content
+    Understand the difference between block & inline elements
+    Understand the different ways to specify measurements
+
+  Block Elements vs Inline-Block Elements 
+
+  Measurements
+    Absolute- px 
+    Relative- %, em or rem, vw, vh, and more, 
+      em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+      ex	Relative to the x-height of the current font (rarely used)	
+      ch	Relative to width of the "0" (zero)	
+      rem	Relative to font-size of the root element	
+      vw	Relative to 1% of the width of the viewport*	
+      vh	Relative to 1% of the height of the viewport*	
+      vmin	Relative to 1% of viewport's* smaller dimension	
+      vmax	Relative to 1% of viewport's* larger dimension	
+      %	Relative to the parent element
+
+  total width = margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+  total height = margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+
+Developer Tools & Default Styles
+  Use developer tools to identify default styles of elements
+  Use developer tools to identify inherited styles of elements     
+

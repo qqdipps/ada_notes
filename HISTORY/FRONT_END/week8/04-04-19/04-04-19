@@ -1,0 +1,88 @@
+HTML Forms
+  https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/05-html-css/html-forms.md
+
+  Describe the mechanisms in the HTML standard that allow for interactive elements on a website
+  Select the correct form element for a given situation
+  Make and post our first HTML form!
+
+  The <form> Tag
+     2 IMPORTANT attributes  <form>:
+      action="some-URL" --> send the data when the form is submitted
+      method="post" HTTP verb
+
+  <input> Tags
+    attributes:
+      type:
+        <input type="text">
+          A one-line text box
+        <input type="checkbox">
+          One checkbox (typically you would use several together)
+        <input type="radio">
+          One radio button (typically you would use several together)
+        <input type="password">
+          Similar to type="text", but the characters are hidden
+        <input type="hidden">
+          Stores a value to be submitted with the form, but is invisible to the user.
+      name:
+        specifies what the data entered here will be called.
+        like hash value key pair
+      value:
+
+      Submit Button special type attribute:
+       <input type="submit">. This creates a submit button! 
+       NOTE INLINE WRAP WITH DIV IS NORMAL;
+
+  <textarea> 
+    is used for a multiline text input. 
+    rows and columns attributes to specify how big it is.
+  <select> 
+    is used for dropdown menus, and should have a name attribute. 
+    Each item in the menu should be wrapped in an <option> tag, and should 
+    have a value attribute indicating the data sent to the server when that option is selected.
+
+  <label> Tags: 
+    <label>
+      for attribute, which should match the id of the <input>
+    
+  EX.
+    <h1>Sign up for the Ada newsletter</h1>
+    <form action="/newsletter/signup" method="post">
+      <div>
+        <label for="email">Your email:</label>
+        <input id="email" name="email" type="text" placeholder="lovelace@adadev.org">
+      </div>
+
+      <div>
+        <label for="name">Your name:</label>
+        <input id="name" name="name" type="text" placeholder="Ada Lovelace">
+      </div>
+
+      <input type="submit" value="Sign up now!">
+    </form>
+    -------------w/ select dropdown menu---------------
+    <h1>Sign up for the Ada newsletter</h1>
+    <form action="/newsletter/signup" method="post">
+      <div>
+        <label for="email">Your email:</label>
+        <input id="email" name="email" type="text" placeholder="lovelace@adadev.org">
+      </div>
+
+      <div>
+        <label for="name">Your name:</label>
+        <input id="name" name="name" type="text" placeholder="Ada Lovelace">
+      </div>
+
+      <div>
+        <label for="source">How did you hear about us?</label>
+        <select id="source" name="source">
+          <option value="search">Found through a search engine</option>
+          <option value="friend">Referred by a friend</option>
+          <option value="sponsor-company">Through one of our sponsor companies</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Sign up now!">
+    </form>
+        
+
+

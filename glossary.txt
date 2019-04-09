@@ -32,5 +32,10 @@ week 6
 03-20-19: Commands and Queries; Get/POST; Postman
 03-21-19: The MVC Pattern; 
 
-WEEK 7
+WEEK 8 (7)
 04-01-19: web(intro); html(intro); Sectioning Elements; CSS(intro)
+04-02-19: Attributes, Classes & IDs; CSS Selectors; Cascade & Inheritance; Box Model, Developer Tools & Default Styles
+04-03-19: Flexbox;
+
+WEEK 9
+04-08-19: intro rails
