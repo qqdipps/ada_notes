@@ -1,0 +1,71 @@
+week 1 & 1.5
+02-06-19: NOS
+02-07-19: precedence; parse tree; case; methods; scope; 
+02-08-19: hwmk subissions; git; array; hash;
+02-14-19: enumerable
+
+week 2
+02-19-19: git; gem; exceptions; pair programming
+02-20-19: minitest; TDD; git cont;
+02-21-19: vs debugger; keyword args & defualt params; More Conditionals;
+02-22-19: .gitignore; git menu keys; 
+
+week 3
+02-25-19: intro to OOP; classes;
+02-26-19: classes/objects vs hashes; hashes re-visit;
+02-27-19: CSV as DB; class methods; self
+
+week 4
+03-03-19: inheritance; 
+03-04-19: UML; regex; abstract class; polymorphism; template methods
+03-06-19: References and Values
+03-07-19: Exception Handling; custom exceptions;
+
+week 5
+03-11-19: user stories; SimpleCov; Guard; spec_helper;
+03-12-19: regex; 
+03-13-19: scripting;
+
+week 6 -- API
+03-18-19: web, HTTP, API (intro); HTTParty; APIs and Authorization;
+03-19-19: Testing APIs; VCR; 
+03-20-19: Commands and Queries; Get/POST; Postman
+03-21-19: The MVC Pattern; 
+
+WEEK 8 (7) -- HTML/CSS
+04-01-19: web(intro); html(intro); Sectioning Elements; CSS(intro)
+04-02-19: Attributes, Classes & IDs; CSS Selectors; Cascade & Inheritance; Box Model, Developer Tools & Default Styles
+04-03-19: Flexbox;
+
+WEEK 9 -- RAILS
+04-08-19: intro rails; new rails; Controllers; Views: ERB & Layouts, Testing Responses in Controllers, Route Parameters, show Action, 
+04-09-19: Requests and Responses; HTTP Verbs; CRUD; Status Codes;
+04-10-19: RESTful routing; Safety & Idempotency; view helpers; rails forms; testing database changes;
+04-12-19: Routes & resources +
+
+WEEK 10 
+04-15-19: ERD (Entity Relationship Diagrams; Active Record Relationships; Database Seeds; Model Logic; Introduction to Agile
+04-16-19: Active Record Validations; Managing Git Branches;
+04-17-19  nested routes (a)
+04-18-19: Deploying to heroku (a)
+04-19-19: many-to-many ERB; pivot table
+
+WEEK 11
+04-22-19: overview of rails testing; Model testing; Test database;
+04-23-19: flash; css framework, bootstrap; session;
+04-24-19: Controller Filters; Create Custom View Helpers;
+
+WEEK 12
+04-29-19: oauth; authentication; Authorization;
+04-30-19: controllers checklist; (prep work for betsy)
+05-01-19: Testing OAuth;
+
+
+WEEK 13
+BESTY WEEK 2
+
+WEEK 14
+API
+
+WEEK 15 -- JS
+05-20-19:
